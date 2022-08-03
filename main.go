@@ -1,46 +1,64 @@
 package main
 
-import (
-	"log"
-	"time"
-)
-
-var s = "seven"
-
 type User struct {
-	FirstName   string
-	LastName    string
-	PhoneNumber string
-	Age         string
-	BirthDate   time.Timer
-}
-
-type myStruct struct {
 	FirstName string
-}
-
-func (m *myStruct) pringFirstName() string {
-	return m.FirstName
+	LastName  string
 }
 
 func main() {
 
-	var myVar myStruct
-	myVar.FirstName = "John"
+	// slices
+	// var mySlice []int
 
-	myVar2 := myStruct{
-		FirstName: "Mary",
-	}
+	// mySlice = append(mySlice, 2)
+	// mySlice = append(mySlice, 1)
+	// mySlice = append(mySlice, 3)
 
-	// log.Println("myVar is set to", myVar.FirstName)
-	// log.Println("myVar2 is set to", myVar2.FirstName)
-	log.Println("myVar is set to", myVar.pringFirstName())
-	log.Println("myVar2 is set to", myVar2.pringFirstName())
+	// sort.Ints(mySlice)
 
-	user := User{
-		FirstName: "Trevor",
-		LastName:  "Hiroshi",
-	}
+	// log.Println(mySlice)
 
-	log.Println(user.FirstName, user.LastName, "Birthdate:", user.BirthDate)
+	// numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	// log.Println(numbers[6:9])
+
+	// maps
+
+	// var myString string
+	// var myInt int
+
+	// myString = "Hi"
+	// myInt = 11
+
+	// mySecondString := "another string"
+
+	// log.Println(myString, mySecondString, myInt)
+
+	// myMap := make(map[string]string)
+
+	// myMap["dog"] = "Samson"
+
+	// myMap["otherDog"] = "Cassie"
+
+	// myMap["dog"] = "fido"
+
+	// log.Println(myMap["dog"])
+	// log.Println(myMap["otherDog"])
+
+	// myMap := make(map[string]int)
+
+	// myMap["First"] = 1
+	// myMap["Second"] = 2
+
+	// log.Println(myMap["First"], myMap["Second"])
+
+	// myMap := make(map[string]User)
+
+	// me := User{
+	// 	FirstName: "Trevor",
+	// 	LastName:  "Sawler",
+	// }
+
+	// myMap["me"] = me
+
+	// log.Println(myMap["me"].FirstName)
 }
