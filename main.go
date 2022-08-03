@@ -1,17 +1,24 @@
 package main
 
-// $ go mod init github.com/hiroshi-iwashita/udemy-buildingModernWebApplicationsWithGo
-
 import (
 	"log"
 
 	"github.com/hiroshi-iwashita/udemy-buildingModernWebApplicationsWithGo/helpers"
 )
 
-func main() {
-	log.Println("Hello")
+const numPool = 100
 
-	var myVar helpers.SomeType
-	myVar.TypeName = "Some name"
-	log.Println(myVar.TypeName)
+func CalculateValue(intChan chan int) {
+	randomNumber := helpers.RandomNumber(numPool)
+	intChan <- randomNumber
+}
+
+func main() {
+	intChan := make(chan int)
+	defer close(intChan)
+
+	go CalculateValue(intChan)
+
+	num := <-intChan
+	log.Println(num)
 }
