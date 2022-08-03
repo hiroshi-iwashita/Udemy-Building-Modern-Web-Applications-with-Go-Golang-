@@ -1,48 +1,56 @@
 package main
 
-import "log"
+import "fmt"
+
+type Animal interface {
+	Says() string
+	NumberOfLegs() int
+}
+
+type Dog struct {
+	Name  string
+	Breed string
+}
+
+type Gorilla struct {
+	Name          string
+	Color         string
+	NumberOfTeeth int
+}
 
 func main() {
-
-	type User struct {
-		FirstName string
-		LastName  string
-		Email     string
-		Age       int
+	dog := Dog{
+		Name:  "Samson",
+		Breed: "German Shephered",
 	}
 
-	var users []User
-	users = append(users, User{"John", "Smith", "john@smith.com", 30})
-	users = append(users, User{"Mary", "Jones", "mary@smith.com", 20})
-	users = append(users, User{"Sally", "Brown", "sally@smith.com", 45})
-	users = append(users, User{"Brown", "Anderson", "brown@smith.com", 17})
-	users = append(users, User{"Alex", "Smith", "alex@smith.com", 44})
+	PrintInfo(&dog)
 
-	for _, l := range users {
-		log.Println(l.FirstName, l.LastName, l.Email, l.Age)
+	gorilla := Gorilla{
+		Name:          "Jock",
+		Color:         "grey",
+		NumberOfTeeth: 38,
 	}
 
-	var firstLine = "once upon a midnight dreary"
-	for i, l := range firstLine {
-		log.Println(i, ":", l)
-	}
+	PrintInfo(&gorilla)
+}
 
-	animals := make(map[string]string)
-	animals["dog"] = "Fido"
-	animals["cat"] = "Fluffy"
-	animals["horse"] = "Charlie"
+func PrintInfo(a Animal) {
+	fmt.Println("This animal says", a.Says(), "and has", a.NumberOfLegs(), "legs")
+}
 
-	for animalType, animal := range animals {
-		log.Println(animalType, animal)
-	}
+func (d *Dog) Says() string {
+	return "Woof"
+}
 
-	// animals := []string{"dog", "fish", "horse", "cow", "cat"}
+func (d *Dog) NumberOfLegs() int {
+	return 4
+}
 
-	// for _, animal := range animals {
-	// 	log.Println(animal)
-	// }
+func (g *Gorilla) Says() string {
+	return "Ugh"
+}
 
-	// for i := 0; i <= 10; i++ {
-	// 	log.Println(i)
-	// }
+func (g *Gorilla) NumberOfLegs() int {
+	return 2
 }
