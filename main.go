@@ -1,64 +1,42 @@
 package main
 
-type User struct {
-	FirstName string
-	LastName  string
-}
+import "log"
 
 func main() {
 
-	// slices
-	// var mySlice []int
+	myVar := "horse"
+	switch myVar {
+	case "cat":
+		log.Println("cat is set to cat")
+	case "dog":
+		log.Println("cat is set to dog")
+	case "fish":
+		log.Println("cat is set to fish")
+	default:
+		log.Println("cat is set to something else")
+	}
 
-	// mySlice = append(mySlice, 2)
-	// mySlice = append(mySlice, 1)
-	// mySlice = append(mySlice, 3)
+	myNum := 100
+	isTrue := false
 
-	// sort.Ints(mySlice)
+	if myNum > 99 && !isTrue {
+		log.Println("myNum is greater than 99 and isTrue is set to true")
+	}
 
-	// log.Println(mySlice)
+	cat := "cat"
 
-	// numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	// log.Println(numbers[6:9])
+	if cat == "cat" {
+		log.Println("Cat is cat")
+	} else {
+		log.Println("Cat is not cat")
+	}
 
-	// maps
+	// var isTrue bool
+	// isTrue = false
 
-	// var myString string
-	// var myInt int
-
-	// myString = "Hi"
-	// myInt = 11
-
-	// mySecondString := "another string"
-
-	// log.Println(myString, mySecondString, myInt)
-
-	// myMap := make(map[string]string)
-
-	// myMap["dog"] = "Samson"
-
-	// myMap["otherDog"] = "Cassie"
-
-	// myMap["dog"] = "fido"
-
-	// log.Println(myMap["dog"])
-	// log.Println(myMap["otherDog"])
-
-	// myMap := make(map[string]int)
-
-	// myMap["First"] = 1
-	// myMap["Second"] = 2
-
-	// log.Println(myMap["First"], myMap["Second"])
-
-	// myMap := make(map[string]User)
-
-	// me := User{
-	// 	FirstName: "Trevor",
-	// 	LastName:  "Sawler",
+	// if isTrue == true {
+	// 	log.Println("isTrue is", isTrue)
+	// } else {
+	// 	log.Println("isTrue is", isTrue)
 	// }
-
-	// myMap["me"] = me
-
-	// log.Println(myMap["me"].FirstName)
 }
