@@ -4,39 +4,45 @@ import "log"
 
 func main() {
 
-	myVar := "horse"
-	switch myVar {
-	case "cat":
-		log.Println("cat is set to cat")
-	case "dog":
-		log.Println("cat is set to dog")
-	case "fish":
-		log.Println("cat is set to fish")
-	default:
-		log.Println("cat is set to something else")
+	type User struct {
+		FirstName string
+		LastName  string
+		Email     string
+		Age       int
 	}
 
-	myNum := 100
-	isTrue := false
+	var users []User
+	users = append(users, User{"John", "Smith", "john@smith.com", 30})
+	users = append(users, User{"Mary", "Jones", "mary@smith.com", 20})
+	users = append(users, User{"Sally", "Brown", "sally@smith.com", 45})
+	users = append(users, User{"Brown", "Anderson", "brown@smith.com", 17})
+	users = append(users, User{"Alex", "Smith", "alex@smith.com", 44})
 
-	if myNum > 99 && !isTrue {
-		log.Println("myNum is greater than 99 and isTrue is set to true")
+	for _, l := range users {
+		log.Println(l.FirstName, l.LastName, l.Email, l.Age)
 	}
 
-	cat := "cat"
-
-	if cat == "cat" {
-		log.Println("Cat is cat")
-	} else {
-		log.Println("Cat is not cat")
+	var firstLine = "once upon a midnight dreary"
+	for i, l := range firstLine {
+		log.Println(i, ":", l)
 	}
 
-	// var isTrue bool
-	// isTrue = false
+	animals := make(map[string]string)
+	animals["dog"] = "Fido"
+	animals["cat"] = "Fluffy"
+	animals["horse"] = "Charlie"
 
-	// if isTrue == true {
-	// 	log.Println("isTrue is", isTrue)
-	// } else {
-	// 	log.Println("isTrue is", isTrue)
+	for animalType, animal := range animals {
+		log.Println(animalType, animal)
+	}
+
+	// animals := []string{"dog", "fish", "horse", "cow", "cat"}
+
+	// for _, animal := range animals {
+	// 	log.Println(animal)
+	// }
+
+	// for i := 0; i <= 10; i++ {
+	// 	log.Println(i)
 	// }
 }
