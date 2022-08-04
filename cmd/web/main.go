@@ -12,7 +12,7 @@ import (
 
 const portNumber = ":8080"
 
-// main is the main application function
+// main is the main function
 func main() {
 	var app config.AppConfig
 
@@ -32,6 +32,6 @@ func main() {
 	http.HandleFunc("/", handlers.Repo.Home)
 	http.HandleFunc("/about", handlers.Repo.About)
 
-	fmt.Println(fmt.Sprintf("Starting application on port %s", portNumber))
+	fmt.Println(fmt.Sprintf("Staring application on port %s", portNumber))
 	_ = http.ListenAndServe(portNumber, nil)
 }
