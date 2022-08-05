@@ -1,4 +1,4 @@
-### CSRF protection middleware for Go.
-https://github.com/justinas/nosurf
+### HTTP Session Management for Go
+https://github.com/alexedwards/scs
 
-$ go get github.com/justinas/nosurf
+$ go get github.com/alexedwards/scs/v2
