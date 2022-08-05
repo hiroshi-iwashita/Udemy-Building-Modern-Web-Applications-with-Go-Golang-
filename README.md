@@ -1,3 +1,3 @@
-### These below are same
-$ go run ./cmd/web
-$ go run cmd/web/*.go
+### Using pat for routing
+https://github.com/bmizerany/pat
+$ go get github.com/bmizerany/pat
