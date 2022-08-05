@@ -1,6 +1,4 @@
-### Using chi for routing
-https://github.com/go-chi/chi
-$ go get -u github.com/go-chi/chi/v5
+### CSRF protection middleware for Go.
+https://github.com/justinas/nosurf
 
-### Clean up modules that no used
-$ go mod tidy
+$ go get github.com/justinas/nosurf
