@@ -12,3 +12,8 @@ https://github.com/mymth/vanillajs-datepicker
 
 ### Notie
 https://github.com/jaredreich/notie
+
+### sweetalert
+https://sweetalert2.github.io/
+
+https://github.com/sweetalert2/sweetalert2
