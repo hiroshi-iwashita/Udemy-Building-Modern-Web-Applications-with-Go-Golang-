@@ -17,3 +17,6 @@ https://github.com/jaredreich/notie
 https://sweetalert2.github.io/
 
 https://github.com/sweetalert2/sweetalert2
+
+### JavaScript modules
+[JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
