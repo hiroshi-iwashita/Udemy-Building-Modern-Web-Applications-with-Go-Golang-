@@ -7,6 +7,8 @@ This is the repository for my bookings and reservations project.
 - Uses [alex edwards SCS](https://github.com/alexedwards/scs/v2) session management
 - Uses [nosurf](https://github.com/justinas/nosurf)
 
-
 ### valillaJs datepicker
 https://github.com/mymth/vanillajs-datepicker
+
+### Notie
+https://github.com/jaredreich/notie
