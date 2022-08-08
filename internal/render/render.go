@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/pkg/config"
-	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/pkg/models"
+	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/internal/config"
+	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/internal/models"
 	"github.com/justinas/nosurf"
 )
 

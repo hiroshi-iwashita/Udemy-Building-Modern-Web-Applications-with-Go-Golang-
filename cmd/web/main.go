@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/pkg/config"
-	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/pkg/handlers"
-	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/pkg/render"
+	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/internal/config"
+	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/internal/handlers"
+	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/internal/render"
 )
 
 const portNumber = ":8080"

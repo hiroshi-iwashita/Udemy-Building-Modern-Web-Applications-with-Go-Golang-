@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/pkg/config"
-	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/pkg/models"
-	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/pkg/render"
+	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/internal/config"
+	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/internal/models"
+	"github.com/hiroshi-iwashita/udemy-building-modern-web-applications-with-go/internal/render"
 )
 
 // Repo the repository used by the handlers
