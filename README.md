@@ -20,3 +20,6 @@ https://github.com/sweetalert2/sweetalert2
 
 ### JavaScript modules
 [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+
+### Validator for Go
+https://github.com/asaskevich/govalidator
