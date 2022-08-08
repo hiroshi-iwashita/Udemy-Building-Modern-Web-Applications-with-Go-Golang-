@@ -23,3 +23,6 @@ https://github.com/sweetalert2/sweetalert2
 
 ### Validator for Go
 https://github.com/asaskevich/govalidator
+
+### Template system
+https://github.com/CloudyKit/jet
